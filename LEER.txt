@@ -1,0 +1,80 @@
+Primero entrar a la carpeta de Config y hacer make, luego ejecute ./Config y ya estaran las Dependencias instaladas luego ejecute ./Config CLEAR para eliminar el directorio de configuracion o Ejecute el script instalacion.sh de esta forma "$ sh instalacion.sh " y se instalaran las dependencias, luego si quiere puede eliminar el script de forma manual. 
+
+
+FORMAS DE JUEGO:
+-----------------
+
+1.USANDO EL SERVER EN LA PROPIA COMPU.
+2.CONECTANDOTE AL SERVIDOR EN OTRA COMPU.
+3.JUGAR SIN SERVIDOR.
+
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+OPCION 1:
+---------
+
+1.Abrir la carpeta del server y compilar el server.
+(linea de compilacion:" $~ make").
+2.Abrir la carpeta del pacman y compilar el pacman.
+(linea de compilacion:" $~ make").
+3.Ejecutar el servidor (" $~ ./server /*numero de PUERTO*/ ").
+4.Por ultimo Ejecutar el pacman de esta forma: (" $~ ./pacman6.0 127.0.0.1 /*numero de PUERTO*/ ").
+
+/*.(el numero de puerto puede variar desde 4500 a 5000)(debe poner el mismo numero en ambos lados, en el servidor y en el juego).*/
+
+
+******************************************************************************************************************************
+
+OPCION 2:
+---------
+
+1.Abrir la carpeta del server y compilar el server EN LA OTRA COMPUTADORA.
+(linea de compilacion:" $~ make").
+2.Ejecutar el servidor EN LA OTRA COMPUTADORA : (" $~ ./server /*numero de PUERTO*/ ").
+3.Abrir la carpeta del pacman y compilar el pacman.
+(linea de compilacion:" $~ make").
+4.Por ultimo Ejecutar el pacman de esta forma: (" $~ ./pacman /*IP DE LA COMPUTADORA DEL SERVIDOR*/ /*numero de PUERTO*/ ").
+
+/*.(el numero de puerto puede variar desde 4500 a 5000)(debe poner el mismo numero en ambos lados, en el servidor y en el juego).*/
+
+
+******************************************************************************************************************************
+
+OPCION 3:
+---------
+
+1.Abrir la carpeta del pacman y compilar el pacman.
+(linea de compilacion:" $~ make").
+2.Por ultimo Ejecutar el pacman de esta forma: (" $~ ./pacman ") ó haciendo doble click en el ejecutable.
+
+        
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(linea de compilacion:" $~ gcc -o pacman pacman6.0.c  funciones.c cliente_pacman.c `allegro-config --shared` -Wall  ").
